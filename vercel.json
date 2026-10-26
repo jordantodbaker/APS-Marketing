@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/client",
+  "rewrites": [
+    {
+      "source": "/((?!api/healthcheck).*)",
+      "destination": "/api/handler"
+    }
+  ],
+  "functions": {
+    "api/handler.js": {
+      "includeFiles": "dist/server/**",
+      "memory": 1024,
+      "maxDuration": 30
+    },
+    "api/healthcheck.js": {
+      "memory": 256,
+      "maxDuration": 10
+    }
+  }
+}

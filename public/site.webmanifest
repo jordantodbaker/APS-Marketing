@@ -1,0 +1,11 @@
+{
+  "name": "Ace Project Services",
+  "short_name": "Ace PS",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "theme_color": "#1d6fb8",
+  "background_color": "#ffffff",
+  "display": "browser",
+  "start_url": "/"
+}

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand blue sampled from the logo mark. */
+  --color-brand-50: #eef5fc;
+  --color-brand-100: #d8e8f7;
+  --color-brand-200: #b3d1ef;
+  --color-brand-300: #7fb2e2;
+  --color-brand-400: #4a92d2;
+  --color-brand-500: #1d6fb8;
+  --color-brand-600: #185f9e;
+  --color-brand-700: #144d80;
+  --color-brand-800: #113f68;
+  --color-brand-900: #0e3354;
+  --color-brand-950: #081f35;
+
+  /* Charcoal from the logo wordmark. */
+  --color-ink-50: #f6f7f8;
+  --color-ink-100: #eceef0;
+  --color-ink-200: #d5d9de;
+  --color-ink-300: #b1b8c0;
+  --color-ink-400: #86909b;
+  --color-ink-500: #67727e;
+  --color-ink-600: #525b66;
+  --color-ink-700: #434a53;
+  --color-ink-800: #2b3037;
+  --color-ink-900: #1b1f24;
+  --color-ink-950: #111418;
+
+  --radius-xl: 0.875rem;
+  --radius-2xl: 1.125rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-ink-900 antialiased;
+    font-feature-settings: "cv11", "ss01";
+  }
+  ::selection {
+    @apply bg-brand-100 text-brand-900;
+  }
+}
+
+@layer utilities {
+  /* Subtle engineering-grid backdrop for hero and CTA bands. */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+  .bg-grid-light {
+    background-image:
+      linear-gradient(to right, rgb(27 31 36 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(27 31 36 / 0.05) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+}

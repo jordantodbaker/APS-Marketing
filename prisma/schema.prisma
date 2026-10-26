@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// A lead captured from the /contact form. The only thing this marketing
+/// site persists — everything else is static content in src/data.
+model ContactSubmission {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  company   String?
+  phone     String?
+  interest  String   // slug from src/data/services.ts, or "other"
+  message   String
+  /// Where the visitor came from (referrer / utm) for attribution.
+  source    String?
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://aceprojectservices.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://aceprojectservices.com/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://aceprojectservices.com/services/project-controls</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aceprojectservices.com/services/p6-scheduling</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aceprojectservices.com/services/p6-hosting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aceprojectservices.com/services/custom-web-apps</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aceprojectservices.com/services/power-bi-reporting</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aceprojectservices.com/services/integrations</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://aceprojectservices.com/platforms</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://aceprojectservices.com/about</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://aceprojectservices.com/contact</loc><changefreq>yearly</changefreq><priority>0.7</priority></url>
+</urlset>
